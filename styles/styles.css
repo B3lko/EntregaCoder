@@ -99,11 +99,12 @@ footer {
 }
 
 .presentacion-texto h1 {
-  font-size: 70px;
+  font-size: 50px;
 }
 
 .presentacion-texto h2 {
   font-size: 50px;
+  color: #0cbccc;
 }
 
 .presentacion-texto h3 {
@@ -262,7 +263,6 @@ footer {
   }
 }
 
-/* ----- Proyectos ----- */
 .proyectos {
   display: grid;
   grid-template-columns: 1fr;
@@ -338,5 +338,5 @@ body {
 }
 
 .navbar-toggler {
-  filter: brightness(0) invert(1); /* Vuelve blanco el ícono */
+  filter: brightness(0) invert(1);
 }

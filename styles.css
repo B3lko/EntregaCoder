@@ -1,0 +1,141 @@
+.avatar {
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  border: 3px solid #0cbccc;
+}
+
+.sobre-mi-p {
+  background-color: #2898ee;
+  font-size: 25px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  width: 400px;
+  border: 2px;
+  border-style: solid;
+  border-radius: 10px;
+  border-color: #0cbccc;
+  color: white;
+}
+
+body {
+  background-color: #111;
+}
+
+h1 {
+  font-display: auto;
+  font-size: 70px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: white;
+}
+
+h2 {
+  font-size: 50px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: white;
+}
+
+h3 {
+  font-size: 30px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: white;
+}
+
+li {
+  font-display: auto;
+  font-size: 20px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+footer {
+  border-top: 3px solid #0cbccc;
+  height: 40px;
+}
+
+.footer-p {
+  font-size: 15px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: white;
+}
+
+.inicio-p {
+  color: white;
+  font-size: 20px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.proyecto-img {
+  width: auto;
+  height: 300px;
+  border-radius: 10px;
+}
+
+.proyectos-caja {
+  background-color: #2898ee;
+  width: fit-content;
+  border: 10px solid #2898ee;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.proyectos-p {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 20px;
+  color: white;
+}
+
+.contacto-li {
+  color: white;
+  font-size: 20px;
+}
+
+nav {
+  background-color: #222;
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: sans-serif;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #2898ee;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}

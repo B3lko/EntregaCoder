@@ -189,7 +189,55 @@ footer {
   font-size: 0.95rem;
 }
 
-/* MEDIA QUERIES */
+.titulo-seccion {
+  text-align: center;
+  margin-top: 2rem;
+  color: var(--color-text);
+  font-size: 3rem;
+}
+
+.inspiraciones {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 1rem;
+  color: var(--color-text);
+  text-align: center;
+}
+
+.inspiraciones h2 {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: var(--color-accent);
+}
+
+.juego {
+  margin-bottom: 3rem;
+}
+
+.juego h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--color-accent);
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
 @media (max-width: 599px) {
   .about-grid {
     grid-template-columns: 1fr;

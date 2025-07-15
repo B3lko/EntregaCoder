@@ -12,55 +12,88 @@
   </head>
   <body>
     <header>
-      <nav>
-        <ul>
-          <li><a href="../index.html">Inicio</a></li>
-          <li><a href="sobre-mi.html">Sobre mí</a></li>
-          <li><a href="proyectos.html">Proyectos</a></li>
-          <li><a href="inspiraciones.html">Inspiraciones</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
-        </ul>
+      <nav class="navbar navbar-expand-md">
+        <div class="container-fluid">
+          <a class="navbar-brand text-white" href="../index.html"
+            >Federico Eigler</a
+          >
+          <button
+            class="navbar-toggler d-md-none"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarResponsive"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarResponsive"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active text-white" href="../index.html"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="sobre-mi.html">Sobre mi</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="inspiraciones.html"
+                  >Inspiraciones</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
     </header>
-    <h1>Inspiraciones</h1>
+    <h1 class="titulo-seccion">Inspiraciones</h1>
     <main>
-      <section>
+      <section class="inspiraciones">
         <h2>Juegos que me inspiran</h2>
-        <article>
+
+        <div class="juego">
           <h3>Stardew Valley</h3>
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/8A7A1X1TVNc"
-            title="Stardew Valley trailer"
-            frameborder="0"
-            allowfullscreen
-          ></iframe>
-        </article>
-        <article>
+          <div class="video-container">
+            <iframe
+              src="https://www.youtube.com/embed/8A7A1X1TVNc"
+              title="Stardew Valley trailer"
+              frameborder="0"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+
+        <div class="juego">
           <h3>Valheim</h3>
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/liQLtCLq3tc"
-            title="Valheim trailer"
-            frameborder="0"
-            allowfullscreen
-          ></iframe>
-        </article>
-        <article>
+          <div class="video-container">
+            <iframe
+              src="https://www.youtube.com/embed/liQLtCLq3tc"
+              title="Valheim trailer"
+              frameborder="0"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+
+        <div class="juego">
           <h3>Faith</h3>
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/bj7zalkzfSI"
-            title="Faith trailer"
-            frameborder="0"
-            allowfullscreen
-          ></iframe>
-        </article>
+          <div class="video-container">
+            <iframe
+              src="https://www.youtube.com/embed/bj7zalkzfSI"
+              title="Faith trailer"
+              frameborder="0"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
       </section>
     </main>
+
     <footer>
       <p class="footer-p">
         &copy; 2025 Federico Eigler. Todos los derechos reservados.

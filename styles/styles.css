@@ -1,11 +1,13 @@
 * {
   margin: 0%;
+  padding: 0%;
 }
 :root {
   --color-bg: #111;
   --color-text: #fff;
   --color-accent: #0ff;
   --color-card-bg: #022;
+  --bs-body-bg: #111;
 }
 
 .avatar {
@@ -26,10 +28,6 @@
   border-radius: 10px;
   border-color: #0cbccc;
   color: white;
-}
-
-body {
-  background-color: #111;
 }
 
 h1 {
@@ -61,13 +59,9 @@ li {
     "Lucida Sans", Arial, sans-serif;
 }
 
-footer {
-  border-top: 3px solid #0cbccc;
-  height: 40px;
-}
-
 .footer-p {
-  font-size: 15px;
+  padding: 30px 0px;
+  font-size: 20px;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   color: white;
@@ -181,7 +175,7 @@ main {
   color: var(--color-accent);
 }
 
-.card {
+.cardAbout {
   border: 2px solid var(--color-accent);
   border-radius: 12px;
   padding: 1rem;
@@ -190,18 +184,18 @@ main {
   margin-bottom: 1.5rem;
 }
 
-.card .date {
+.cardAbout .date {
   font-weight: bold;
   color: var(--color-accent);
   margin-bottom: 0.5rem;
 }
 
-.card h4 {
+.cardAbout h4 {
   margin: 0.2rem 0;
   font-size: 1.2rem;
 }
 
-.card p {
+.cardAbout p {
   margin: 0.3rem 0;
   font-size: 0.95rem;
 }
@@ -218,11 +212,11 @@ main {
     font-size: 2rem;
   }
 
-  .card h4 {
+  .cardAbout h4 {
     font-size: 1rem;
   }
 
-  .card p {
+  .cardAbout p {
     font-size: 0.85rem;
   }
 }
@@ -243,4 +237,30 @@ main {
   .about-grid {
     grid-template-columns: 1fr 1fr;
   }
+}
+
+nav {
+  background-color: #031926;
+}
+
+nav h1 {
+  font-size: 30px;
+}
+
+footer {
+  border-top: 3px solid #0cbccc;
+  display: flex;
+  height: 70px;
+  background-color: #111;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-toggler {
+  filter: brightness(0) invert(1);
+}
+
+body {
+  background-color: #1511;
+  min-height: 1vh !important;
 }

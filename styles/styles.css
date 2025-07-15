@@ -1,3 +1,13 @@
+* {
+  margin: 0%;
+}
+:root {
+  --color-bg: #111;
+  --color-text: #fff;
+  --color-accent: #0ff;
+  --color-card-bg: #022;
+}
+
 .avatar {
   border-radius: 50%;
   width: 300px;
@@ -138,4 +148,99 @@ body {
 
 main {
   flex: 1;
+}
+
+/* ---- Seccion about ----*/
+
+.about {
+  padding: 4rem 1rem;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.about h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  border-bottom: 2px solid var(--color-accent);
+  display: inline-block;
+}
+
+.about-grid {
+  display: grid;
+  gap: 2rem;
+  margin-top: 2rem;
+  max-width: 1000px;
+  margin-inline: auto;
+}
+
+.column h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--color-accent);
+}
+
+.card {
+  border: 2px solid var(--color-accent);
+  border-radius: 12px;
+  padding: 1rem;
+  background-color: var(--color-card-bg);
+  text-align: left;
+  margin-bottom: 1.5rem;
+}
+
+.card .date {
+  font-weight: bold;
+  color: var(--color-accent);
+  margin-bottom: 0.5rem;
+}
+
+.card h4 {
+  margin: 0.2rem 0;
+  font-size: 1.2rem;
+}
+
+.card p {
+  margin: 0.3rem 0;
+  font-size: 0.95rem;
+}
+
+/* ---------------- MEDIA QUERIES ---------------- */
+
+/* Smartphones (menos de 600px) */
+@media (max-width: 599px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about h2 {
+    font-size: 2rem;
+  }
+
+  .card h4 {
+    font-size: 1rem;
+  }
+
+  .card p {
+    font-size: 0.85rem;
+  }
+}
+
+/* Tablets (600px a 1023px) */
+@media (min-width: 600px) and (max-width: 1023px) {
+  .about-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .about h2 {
+    font-size: 2.2rem;
+  }
+}
+
+/* PC (1024px o más) */
+@media (min-width: 1024px) {
+  .about-grid {
+    grid-template-columns: 1fr 1fr;
+  }
 }

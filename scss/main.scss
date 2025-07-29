@@ -1,12 +1,12 @@
 @import "variables";
 @import "nav";
 @import "footer";
-@import "presentacion";
 @import "about";
 @import "secciones";
 @import "proyectos";
 @import "media";
-
+@import "animaciones";
+@import "presentacion";
 * {
   margin: 0;
   padding: 0;
@@ -23,6 +23,10 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+}
+body {
+  @include animated-dark-gradient-bg(30s);
+  color: $color-text;
 }
 
 body {
@@ -65,4 +69,48 @@ nav {
       color: $color-hover;
     }
   }
+}
+// 🔁 Animaciones
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+// 🔧 Mixins SCSS
+@mixin slide-up($duration: 0.6s, $delay: 0s) {
+  animation: slideUp $duration ease-out $delay forwards;
+}
+
+@mixin zoom-in($duration: 0.6s, $delay: 0s) {
+  animation: zoomIn $duration ease-out $delay forwards;
+}
+
+@mixin fade-in($duration: 0.6s, $delay: 0s) {
+  animation: fadeIn $duration ease-out $delay forwards;
 }

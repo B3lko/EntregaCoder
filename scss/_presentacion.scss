@@ -14,6 +14,8 @@
       border-radius: 50%;
       border: 3px solid $color-avatar-border;
       object-fit: cover;
+
+      @include zoom-in(); // 👈 animación
     }
   }
 
@@ -28,19 +30,18 @@
 
     h1 {
       font-size: 50px;
+      @include slide-up(0.8s, 0s); // 👈 animación
     }
 
     h2 {
       font-size: 50px;
       color: $color-border-footer;
+      @include slide-up(0.8s, 0.1s); // 👈 delay opcional
     }
 
     h3 {
       font-size: 30px;
+      @include slide-up(0.8s, 0.2s); // 👈 delay progresivo
     }
   }
-}
-
-.inicio-p {
-  font-size: 20px;
 }

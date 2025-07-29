@@ -1,0 +1,31 @@
+@mixin fade-in($duration: $anim-normal) {
+  animation: fadeIn $duration $easing both;
+}
+
+@mixin slide-up($distance: 20px, $duration: $anim-normal) {
+  animation: slideUp $duration $easing both;
+  transform: translateY($distance);
+}
+
+@mixin zoom-in($scale: 1.2, $duration: $anim-normal) {
+  animation: zoomIn $duration $easing both;
+  transform: scale(0.8);
+}
+
+@mixin animated-dark-gradient-bg($duration: 20s) {
+  background: linear-gradient(-45deg, #111, #222, #333, #222, #111);
+  background-size: 400% 400%;
+  animation: gradientMove $duration ease infinite;
+}
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

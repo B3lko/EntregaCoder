@@ -1,0 +1,46 @@
+.presentacion {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  &-imagen {
+    img.avatar {
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+      border: 3px solid $color-avatar-border;
+      object-fit: cover;
+    }
+  }
+
+  &-texto {
+    h1,
+    h2,
+    h3,
+    p {
+      margin-bottom: 1rem;
+      color: aliceblue;
+    }
+
+    h1 {
+      font-size: 50px;
+    }
+
+    h2 {
+      font-size: 50px;
+      color: $color-border-footer;
+    }
+
+    h3 {
+      font-size: 30px;
+    }
+  }
+}
+
+.inicio-p {
+  font-size: 20px;
+}

@@ -1,0 +1,13 @@
+footer {
+  border-top: 3px solid $color-border-footer;
+  background-color: $color-bg;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  color: white;
+
+  .footer-p {
+    font-size: 20px;
+  }
+}

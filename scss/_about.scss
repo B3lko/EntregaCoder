@@ -1,0 +1,54 @@
+.about {
+  padding: 4rem 1rem;
+  background-color: $color-bg;
+  color: $color-text;
+  text-align: center;
+
+  h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    border-bottom: 2px solid $color-accent;
+    display: inline-block;
+  }
+
+  &-grid {
+    display: grid;
+    gap: 2rem;
+    margin-top: 2rem;
+    max-width: 1000px;
+    margin-inline: auto;
+  }
+}
+
+.column {
+  h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: $color-accent;
+  }
+}
+
+.cardAbout {
+  border: 2px solid $color-accent;
+  border-radius: 12px;
+  padding: 1rem;
+  background-color: $color-card-bg;
+  text-align: left;
+  margin-bottom: 1.5rem;
+
+  .date {
+    font-weight: bold;
+    color: $color-accent;
+    margin-bottom: 0.5rem;
+  }
+
+  h4 {
+    margin: 0.2rem 0;
+    font-size: 1.2rem;
+  }
+
+  p {
+    margin: 0.3rem 0;
+    font-size: 0.95rem;
+  }
+}
